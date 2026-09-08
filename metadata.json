@@ -1,0 +1,6 @@
+{
+  "name": "eMobile POS - ZRM Solutions",
+  "description": "Official website for ZRM POS (eMobile POS by ZRM Solutions) featuring dual-IMEI tracking, mobile repair ticketing, 80mm thermal receipts, interactive demo, and the official ZRM POS brand logo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

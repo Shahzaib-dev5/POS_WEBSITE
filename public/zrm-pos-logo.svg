@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 340" width="100%" height="100%">
+  <defs>
+    <!-- Gradient for POS text -->
+    <linearGradient id="posGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="60%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Gradient for Swoosh Ring -->
+    <linearGradient id="swooshGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b1a48" />
+      <stop offset="40%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Gradient for Cart -->
+    <linearGradient id="cartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0066d6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Gradient for Divider line -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <filter id="subtleShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <g id="logo-mark" transform="translate(0, 0)">
+    <!-- Speed Motion Lines (Left) -->
+    <path d="M 38 152 L 125 152" stroke="#0066d6" stroke-width="12" stroke-linecap="round" />
+    <path d="M 38 206 L 165 206" stroke="#0066d6" stroke-width="12" stroke-linecap="round" />
+    <path d="M 80 240 L 140 240" stroke="#0066d6" stroke-width="12" stroke-linecap="round" />
+
+    <!-- Swoosh Circle Enclosing Cart -->
+    <path d="M 230 46 C 140 46 68 115 68 202 C 68 238 80 270 102 296 C 112 308 126 318 142 324 C 185 340 246 332 295 285 C 316 265 328 238 328 214" 
+          fill="none" 
+          stroke="url(#swooshGradient)" 
+          stroke-width="11" 
+          stroke-linecap="round" />
+
+    <!-- POS Register Receipt (Paper Sticking Out) -->
+    <g transform="translate(178, 62)">
+      <!-- Receipt paper white sheet with angled top -->
+      <path d="M 0 45 L 6 12 L 18 18 L 30 10 L 42 18 L 54 12 L 60 45 Z" fill="#ffffff" stroke="#0284c7" stroke-width="4" stroke-linejoin="round" />
+      <!-- Printed receipt lines -->
+      <line x1="12" y1="26" x2="48" y2="26" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" />
+      <line x1="12" y1="34" x2="48" y2="34" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Cash Register / POS Terminal Body inside cart -->
+    <g transform="translate(170, 105)">
+      <!-- Slanted Navy Register Face -->
+      <rect x="0" y="0" width="138" height="74" rx="14" fill="#0b1a48" />
+      
+      <!-- Keypad Grid (2 rows of 4 white keys) -->
+      <!-- Row 1 -->
+      <rect x="12" y="14" width="22" height="18" rx="4" fill="#ffffff" />
+      <rect x="42" y="14" width="22" height="18" rx="4" fill="#ffffff" />
+      <rect x="72" y="14" width="22" height="18" rx="4" fill="#ffffff" />
+      <rect x="102" y="14" width="22" height="18" rx="4" fill="#ffffff" />
+
+      <!-- Row 2 -->
+      <rect x="12" y="40" width="22" height="18" rx="4" fill="#ffffff" />
+      <rect x="42" y="40" width="22" height="18" rx="4" fill="#ffffff" />
+      <rect x="72" y="40" width="22" height="18" rx="4" fill="#ffffff" />
+      <rect x="102" y="40" width="22" height="18" rx="4" fill="#ffffff" />
+    </g>
+
+    <!-- Shopping Cart Basket -->
+    <g id="cart-basket">
+      <!-- Front & bottom basket frame -->
+      <path d="M 125 125 L 158 125 L 202 246 L 298 246 L 312 170 L 175 170" 
+            fill="none" 
+            stroke="url(#cartGradient)" 
+            stroke-width="17" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" />
+      <!-- Back support / handle bar -->
+      <line x1="125" y1="125" x2="160" y2="125" stroke="#1e40af" stroke-width="16" stroke-linecap="round" />
+    </g>
+
+    <!-- Wheels of Cart -->
+    <g id="cart-wheels">
+      <circle cx="212" cy="282" r="18" fill="#0b1a48" />
+      <circle cx="268" cy="282" r="18" fill="#0b1a48" />
+    </g>
+  </g>
+
+  <!-- Typography: ZRM POS -->
+  <g id="brand-text">
+    <!-- "ZRM" in Dark Navy -->
+    <text x="360" y="222" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="124" 
+          font-weight="900" 
+          letter-spacing="-1.5" 
+          fill="#0c1f4a">ZRM</text>
+
+    <!-- "POS" in Blue Gradient -->
+    <text x="682" y="222" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="124" 
+          font-weight="900" 
+          letter-spacing="-1.5" 
+          fill="url(#posGradient)">POS</text>
+
+    <!-- Horizontal Underline Divider -->
+    <line x1="362" y1="248" x2="966" y2="248" stroke="url(#lineGradient)" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Tagline: Smart Sales • Simple Management • Better Business -->
+    <text x="364" y="294" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="28" 
+          font-weight="700" 
+          fill="#0c1f4a" 
+          letter-spacing="0.2">
+      Smart Sales <tspan fill="#0066d6" font-weight="900">•</tspan> Simple Management <tspan fill="#0066d6" font-weight="900">•</tspan> Better Business
+    </text>
+  </g>
+</svg>
